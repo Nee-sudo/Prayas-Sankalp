@@ -1,0 +1,741 @@
+/* styles.css */
+* {
+  box-sizing: border-box;
+  list-style: none;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* Horizontal Navbar styles */
+.navbar {
+  background-color: #12171c; /* Navbar background color */
+  overflow: hidden;
+  padding: 10px;
+}
+
+.logo {
+  float: left;
+  color: #fff;
+  font-size: 1.5em;
+  margin-right: 20px;
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  color: #ffffff; /* Text color */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a img.user-image {
+  max-width: 30px;
+  border-radius: 50%; /* Add rounded corners for a circular effect */
+  display: block; /* Remove any extra spacing below the image */
+  margin: 0; /* Set margin to 0 to remove space on the left and right */
+}
+
+/* Optional: Add hover effect */
+.navbar a:hover img.user-image {
+  opacity: 0.8;
+  /* You can customize the hover effect as needed */
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  margin: 1px;
+  border-radius: 5px;
+  background-color: #0056b3; /* Hover background color */
+}
+
+/* Button styles */
+.navbar button {
+  float: right;
+  background-color: rgb(62, 97, 238);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: larger;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.navbar:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* User Profile Section Styles */
+
+#profile-section-overlay{
+  display: none; /* Initially hide the overlay */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75); /* Semi-transparent background */
+  justify-content: center;
+  align-items: center;
+}
+#profile-section-overlay.visible{
+  display: flex;
+}
+.user-profile {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.user-profile h2 {
+  color: #333;
+  text-align: center;
+}
+
+
+.profile-image{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.profile-image img {
+  max-width: 100%;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.user-details p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.profile-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.edit-profile-btn,
+.change-password-btn,
+.logout-btn {
+  margin: 1px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.edit-profile-btn {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.change-password-btn {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.logout-btn {
+  background-color: #c0392b;
+  color: #fff;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+  .user-details p {
+      font-size: 14px;
+  }
+
+  .profile-actions {
+      flex-direction: column;
+  }
+
+  .edit-profile-btn,
+  .change-password-btn,
+  .logout-btn {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+}
+
+.banner {
+  background-color: #333; /* Set your desired background color */
+  color: white; /* Set your desired text color */
+  padding: 20px;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgb(0,0,0,0.75)),url(product.jpg);
+}
+
+.product-banner {
+  margin-top: 5px;
+  background-color: #333; /* Set your desired background color */
+  color: white; /* Set your desired text color */
+  padding: 20px;
+  text-align: center;
+  background-image: url(product-banner.jpg);
+}
+
+.search_container {
+  display: flex;
+  max-width: 600px; /* Set your desired max width for the search container */
+  margin: 0 auto; /* Center the search container */
+}
+
+.input_btn {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.search_btn {
+  background-color: #4CAF50; /* Green background color, change as needed */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search_btn:hover {
+  background-color: #45a049; /* Darker green on hover, change as needed */
+}
+
+.banner-text {
+  margin-top: 20px;
+}
+
+.banner-text h1 {
+  font-size: 50px;
+}
+.banner-text .intro {
+  font-size: 40px;
+  color: #0056b3;
+}
+
+
+.banner-text p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.items_navbar{
+  background-color: #0056b3;
+  overflow: hidden;
+}
+.items_navbar .item{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 10px;
+  float: left;
+  text-decoration: none;
+}
+
+/* Basic button styles */
+.register_btn {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: rgb(37, 93, 247);
+  color: white;
+  border-style: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover state */
+.register_btn:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+/* You can add more styles as needed, such as margin, background color, etc. */
+
+.box-container-heading{
+/* Set your desired background color */
+  color:black; /* Set your desired text color */
+  font-size: 40px;
+  text-align: center;
+}
+
+/* suggetion-container */
+.suggestion-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.suggestion-container h2 {
+  padding-bottom: 40px;
+}
+
+.suggestion-box {
+  text-align: center;
+  background-color: rgb(183, 156, 156);
+  padding: 10px;
+  margin: 1%;
+}
+
+.suggestion-box img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.suggestion-box-description {
+  color: #000000;
+}
+
+/* join us css */
+/* Add these styles in your existing styles.css file */
+
+.join-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align items vertically in the center */
+  border: 1px solid #ccc;
+  padding: 20px; /* Add padding for better spacing */
+}
+
+.join-container img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 20px; /* Add margin to the right of the image */
+}
+
+.join-container-text {
+  text-align: center;
+  padding: 10px;
+}
+
+.join-container-text h2 {
+  color: #45a049;
+  padding-bottom: 30px;
+}
+
+.join-container-text label {
+  padding-bottom: 60px;
+}
+
+/* Help the community */
+.help-community{
+  display: flex;
+  border: 1px solid #ccc;
+  
+}
+.box-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.boxes{
+  text-align: center;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 1%;
+}
+
+.boxes img{
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-name{
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.product-price{
+  margin-bottom: 10px;
+}
+
+.boxes button{
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.boxes button:hover {
+  background-color: #45a049; /* Darker green on hover, change as needed */
+}
+
+/* food-container */
+.food-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* signup-overlay */
+
+.signup-overlay {
+  display: none; /* Initially hide the overlay */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-overlay.visible {
+  display: flex; /* Show the overlay when the "visible" class is present */
+}
+
+.signup-overlay h2{
+  margin-bottom: 10px;
+}
+
+/* product-detail-overlay */
+.product-detail-overlay {
+  display: none; /* Initially hide the overlay */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75); /* Semi-transparent background */
+  justify-content: center;
+  align-items: center;
+}
+
+.product-detail-overlay.visible {
+  display: flex; /* Show the overlay when the "visible" class is present */
+}
+.product-description{
+  color: #000000;
+  margin: 10PX;
+}
+.quantity{
+  background-color:grey;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* login css */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  color: #555;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.login-btn {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login-btn:hover {
+  background-color: #45a049;
+}
+
+/* footer-css */
+.column-footer {
+  display: flex;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer-column h3 {
+  color: #45a049;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+ul li a{
+  text-decoration: none;
+}
+.social-icons {
+  display: flex;
+}
+
+.social-icon {
+  margin-right: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+/* gpt */
+/* styles.css */
+
+/* Your existing styles here */
+
+/* Responsive Styles */
+
+/* Mobile */
+@media only screen and (max-width: 600px) {
+  .navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .logo {
+    float: none;
+    margin-right: 0;
+  }
+
+  .navbar button {
+    float: none;
+    display: block;
+    margin: 10px auto;
+  }
+
+  .banner {
+    padding: 10px;
+  }
+
+  .search_container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .banner-text h1 {
+    font-size: 30px;
+  }
+
+  .banner-text .intro {
+    font-size: 24px;
+  }
+
+  .banner-text p {
+    font-size: 14px;
+  }
+
+  .items_navbar {
+    flex-direction: column;
+  }
+
+  .items_navbar .item {
+    float: none;
+    text-align: center;
+    margin: 5px;
+  }
+/* suggestion box container */
+  .suggestion-container {
+    flex-direction: column;
+    max-height: none;
+    min-height: none;
+  }
+
+
+/* join us container */
+  .join-container {
+    flex-direction: column;
+  }
+  
+
+
+
+  .box-container,
+  .food-container {
+    flex-direction: column;
+  }
+
+  .boxes,
+  .boxes img {
+    width: 100%;
+  }
+
+  .login-container {
+    padding: 10px;
+  }
+
+  .login-form {
+    max-width: 100%;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Adjust styles for tablets if needed */
+}
+
+/* Desktop */
+@media only screen and (min-width: 1025px) {
+  /* Adjust styles for desktop if needed */
+}
+
+
+/* registeration and login css  */
+
+/* Reset some default styles for better consistency */
+body, h1, h2, p, input, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+#content_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#form_container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#form_header_container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#form_content_inner_container {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+  /* Add your CSS styling here */
+  #content_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#form_container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#form_header_container {
+    text-align: center;
+}
+
+#form_content_container {
+    margin-top: 20px;
+}
+
+#form_content_inner_container {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#button_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#registerButton {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+#loginButton {
+    background-color: #2196f3;
+    color: #fff;
+}

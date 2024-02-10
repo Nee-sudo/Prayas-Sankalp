@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./market.css">
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./buy-item-page.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+    />
+  </head>
+  <body>
+    
+<div id="overlay" onclick="off()">
+    <div id="text">Overlay Text</div>
+  </div>
+  
+  <div style="padding:20px">
+    <h2>Overlay with Text</h2>
+    <button onclick="on()">Turn on overlay effect</button>
+  </div>
+  
+  <script>
+  function on() {
+    document.getElementById("overlay").style.display = "block";
+  }
+  
+  function off() {
+    document.getElementById("overlay").style.display = "none";
+  }
+  </script>
+
+
+
+    <div class="marketplace-page">
+      <main class="log-in4">
+        <img
+          class="backgroundtexture-icon"
+          alt=""
+          src="./public/backgroundtexture@2x.png"
+        />
+
+        <img
+          class="backgroundtexture-icon1"
+          alt=""
+          src="./public/backgroundtexture@2x.png"
+        />
+
+        <section class="volunteer3">
+          <div class="navi-links">
+            <img
+              class="backgroundtexture-icon2"
+              alt=""
+              src="./public/backgroundtexture@2x.png"
+            />
+
+            <div class="nmaviheader-group">
+              <header class="nmaviheader3">
+                <div class="logotitle4">
+                  <div class="logo5">
+                    <img
+                      class="image-104-icon3"
+                      loading="eager"
+                      alt=""
+                      src="./public/image-104@2x.png"
+                    />
+                  </div>
+                  <div class="text3">
+                    <h2 class="prayaas-sankalp7">Prayaas-Sankalp</h2>
+                  </div>
+                </div>
+                <div class="navilinls2">
+                  <div class="navlink10">
+                    <div class="home3">Home</div>
+                  </div>
+                  <button class="item-frames-group">
+                    <div class="marketplace">Marketplace</div>
+                  </button>
+                  <div class="navlink11">
+                    <div class="donate3">Donate</div>
+                  </div>
+                  <div class="navlink12">
+                    <div class="volunteer4">Volunteer</div>
+                  </div>
+                  <div class="navlink13">
+                    <div class="collab3">Collab</div>
+                  </div>
+                  <div class="navlink14">
+                    <div class="cart-orders3" onclick="open_order_cart()" >Cart & Orders</div>
+                  </div>
+                </div>
+                <div class="profile3">
+                  <div class="image-7-wrapper">
+                    <img
+                      class="image-7-icon5"
+                      loading="eager"
+                      alt=""
+                      src="./public/image-7@2x.png"
+                    />
+                  </div>
+                  <div class="nametitle3">
+                    <div class="user-co-founder2">
+                      <span class="user-co-founder-txt-container2">
+                        <p class="user2">User</p>
+                        <p class="co-founder3">Co-Founder</p>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </header>
+              <div class="hero-section">
+                <div class="explore-our-marketplace-wrapper">
+                  <h1 class="explore-our-marketplace-container">
+                    <p class="explore-our-marketplace">
+                      <span class="explore-our">Explore Our </span>
+                      <span>Marketplace</span>
+                    </p>
+                    <p class="blank-line3">&nbsp;</p>
+                  </h1>
+                </div>
+                <img
+                  class="image-87-icon"
+                  loading="eager"
+                  alt=""
+                  src="./public/image-87@2x.png"
+                />
+              </div>
+            </div>
+            <div class="f-r-a-m-e">
+              <div class="switch">
+                <h3 class="food">Food</h3>
+                <div class="food-items-frame-wrapper">
+                  <div class="food-items-frame">
+                    <div class="food-items-frame-child"></div>
+                    <div class="about-frame">
+                      <div class="item-for-sell-parent"></div>
+                      <div class="description"></div>
+                    </div>
+                  </div>
+                </div>
+                <h3 class="items">Items</h3>
+              </div>
+            </div>
+          </div>
+          <div class="books">
+            <div class="books-child"></div>
+            <div class="group-frame-stationary">
+              <h1 class="books-stationary">Books & Stationary</h1>
+              <img
+                class="group-frame-stationary-child"
+                loading="eager"
+                alt=""
+                src="./public/line-6.svg"
+              />
+
+              <div class="frames" id="box-container" >
+                <div class="vector-shape">
+                  <img
+                    class="image-26-icon1"
+                    alt=""
+                    src="./public/image-26@2x.png"
+                  />
+                  <div class="rectangle-group">
+                    <div class="frame-inner"></div>
+                    <div class="item-for-sell-1045-container">
+                      <div class="item-for-sell-container1">
+                        <span>
+                          <p class="item-for-sell1">Item for Sell</p>
+                          <p class="p1">$10.45</p>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="description2">Description:</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="frames1">
+              <div class="frame-b">
+                <img
+                  class="image-26-icon4"
+                  alt=""
+                  src="./public/image-26@2x.png"
+                />
+
+                <div class="rectangle-parent1">
+                  <div class="frame-child2"></div>
+                  <div class="item-for-sell-1045-wrapper2">
+                    <div class="item-for-sell-container4">
+                      <span>
+                        <p class="item-for-sell4">Item for Sell</p>
+                        <p class="p4">$10.45</p>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="description5">Description:</div>
+                </div>
+              </div>
+              <div class="image-26-container">
+                <img
+                  class="image-26-icon5"
+                  alt=""
+                  src="./public/image-26@2x.png"
+                />
+
+                <div class="rectangle-parent2">
+                  <div class="frame-child3"></div>
+                  <div class="item-for-sell-1045-wrapper3">
+                    <div class="item-for-sell-container5">
+                      <span>
+                        <p class="item-for-sell5">Item for Sell</p>
+                        <p class="p5">$10.45</p>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="description6">Description:</div>
+                </div>
+              </div>
+              <div class="grid-item">
+                <img
+                  class="image-26-icon6"
+                  alt=""
+                  src="./public/image-26@2x.png"
+                />
+
+                <div class="rectangle-parent3">
+                  <div class="frame-child4"></div>
+                  <div class="item-for-sell-1045-wrapper4">
+                    <div class="item-for-sell-container6">
+                      <span>
+                        <p class="item-for-sell6">Item for Sell</p>
+                        <p class="p6">$10.45</p>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="description7">Description:</div>
+                </div>
+              </div>
+              <div class="non-featured-item">
+                <img
+                  class="image-26-icon7"
+                  alt=""
+                  src="./public/image-26@2x.png"
+                />
+
+                <div class="rectangle-parent4">
+                  <div class="frame-child5"></div>
+                  <div class="item-for-sell-1045-wrapper5">
+                    <div class="item-for-sell-container7">
+                      <span>
+                        <p class="item-for-sell7">Item for Sell</p>
+                        <p class="p7">$10.45</p>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="description8">Description:</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="clothes">
+          <div class="clothes-child"></div>
+          <div class="logo-title-text">
+            <h1 class="clothes1">Clothes</h1>
+            <img
+              class="logo-title-text-child"
+              alt=""
+              src="./public/line-6.svg"
+            />
+
+            <div class="frames2">
+              <div class="cart-order">
+                <img
+                  class="image-26-icon8"
+                  alt=""
+                  src="./public/image-26@2x.png"
+                />
+
+                <div class="rectangle-parent5">
+                  <div class="frame-child6"></div>
+                  <div class="item-for-sell-1045-wrapper6">
+                    <div class="item-for-sell-container8">
+                      <span>
+                        <p class="item-for-sell8">Item for Sell</p>
+                        <p class="p8">$10.45</p>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="description9">Description:</div>
+                </div>
+              </div>
+              <div class="image-26-parent1">
+                <img
+                  class="image-26-icon9"
+                  alt=""
+                  src="./public/image-26@2x.png"
+                />
+
+                <div class="rectangle-parent6">
+                  <div class="frame-child7"></div>
+                  <div class="item-for-sell-1045-wrapper7">
+                    <div class="item-for-sell-container9">
+                      <span>
+                        <p class="item-for-sell9">Item for Sell</p>
+                        <p class="p9">$10.45</p>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="description10">Description:</div>
+                </div>
+              </div>
+              <div class="navi-links1">
+                <img
+                  class="image-26-icon10"
+                  alt=""
+                  src="./public/image-26@2x.png"
+                />
+
+                <div class="rectangle-parent7">
+                  <div class="frame-child8"></div>
+                  <div class="item-for-sell-1045-wrapper8">
+                    <div class="item-for-sell-container10">
+                      <span>
+                        <p class="item-for-sell10">Item for Sell</p>
+                        <p class="p10">$10.45</p>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="description11">Description:</div>
+                </div>
+              </div>
+              <div class="food-items-container">
+                <img
+                  class="image-26-icon11"
+                  alt=""
+                  src="./public/image-26@2x.png"
+                />
+
+                <div class="rectangle-parent8">
+                  <div class="frame-child9"></div>
+                  <div class="item-for-sell-1045-wrapper9">
+                    <div class="item-for-sell-container11">
+                      <span>
+                        <p class="item-for-sell11">Item for Sell</p>
+                        <p class="p11">$10.45</p>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="description12">Description:</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="frames3">
+            <div class="books-container">
+              <img
+                class="image-26-icon12"
+                alt=""
+                src="./public/image-26@2x.png"
+              />
+
+              <div class="rectangle-parent9">
+                <div class="frame-child10"></div>
+                <div class="item-for-sell-1045-wrapper10">
+                  <div class="item-for-sell-container12">
+                    <span>
+                      <p class="item-for-sell12">Item for Sell</p>
+                      <p class="p12">$10.45</p>
+                    </span>
+                  </div>
+                </div>
+                <div class="description13">Description:</div>
+              </div>
+            </div>
+            <div class="nav-bar">
+              <img
+                class="image-26-icon13"
+                alt=""
+                src="./public/image-26@2x.png"
+              />
+
+              <div class="rectangle-parent10">
+                <div class="frame-child11"></div>
+                <div class="item-for-sell-1045-wrapper11">
+                  <div class="item-for-sell-container13">
+                    <span>
+                      <p class="item-for-sell13">Item for Sell</p>
+                      <p class="p13">$10.45</p>
+                    </span>
+                  </div>
+                </div>
+                <div class="description14">Description:</div>
+              </div>
+            </div>
+            <div class="rectangle">
+              <img
+                class="image-26-icon14"
+                alt=""
+                src="./public/image-26@2x.png"
+              />
+
+              <div class="rectangle-parent11">
+                <div class="frame-child12"></div>
+                <div class="item-for-sell-1045-wrapper12">
+                  <div class="item-for-sell-container14">
+                    <span>
+                      <p class="item-for-sell14">Item for Sell</p>
+                      <p class="p14">$10.45</p>
+                    </span>
+                  </div>
+                </div>
+                <div class="description15">Description:</div>
+              </div>
+            </div>
+            <div class="collab4">
+              <img
+                class="image-26-icon15"
+                alt=""
+                src="./public/image-26@2x.png"
+              />
+
+              <div class="rectangle-parent12">
+                <div class="frame-child13"></div>
+                <div class="item-for-sell-1045-wrapper13">
+                  <div class="item-for-sell-container15">
+                    <span>
+                      <p class="item-for-sell15">Item for Sell</p>
+                      <p class="p15">$10.45</p>
+                    </span>
+                  </div>
+                </div>
+                <div class="description16">Description:</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="furniture">
+          <div class="furniture-child"></div>
+          <div class="frame-parent">
+            <div class="furniture-parent">
+              <h1 class="furniture1">Furniture</h1>
+              <img class="line-icon" alt="" src="./public/line-6.svg" />
+            </div>
+            <div class="frames4">
+              <div class="home-link">
+                <img
+                  class="image-26-icon16"
+                  alt=""
+                  src="./public/image-26@2x.png"
+                />
+
+                <div class="rectangle-parent13">
+                  <div class="frame-child14"></div>
+                  <div class="item-for-sell-1045-wrapper14">
+                    <div class="item-for-sell-container16">
+                      <span>
+                        <p class="item-for-sell16">Item for Sell</p>
+                        <p class="p16">$10.45</p>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="description17">Description:</div>
+                </div>
+              </div>
+              <div class="food-items-category">
+                <img
+                  class="image-26-icon17"
+                  alt=""
+                  src="./public/image-26@2x.png"
+                />
+
+                <div class="rectangle-parent14">
+                  <div class="frame-child15"></div>
+                  <div class="item-for-sell-1045-wrapper15">
+                    <div class="item-for-sell-container17">
+                      <span>
+                        <p class="item-for-sell17">Item for Sell</p>
+                        <p class="p17">$10.45</p>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="description18">Description:</div>
+                </div>
+              </div>
+              <div class="books-and-stationary">
+                <img
+                  class="image-26-icon18"
+                  alt=""
+                  src="./public/image-26@2x.png"
+                />
+
+                <div class="rectangle-parent15">
+                  <div class="frame-child16"></div>
+                  <div class="item-for-sell-1045-wrapper16">
+                    <div class="item-for-sell-container18">
+                      <span>
+                        <p class="item-for-sell18">Item for Sell</p>
+                        <p class="p18">$10.45</p>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="description19">Description:</div>
+                </div>
+              </div>
+              <div class="image-26-parent2">
+                <img
+                  class="image-26-icon19"
+                  alt=""
+                  src="./public/image-26@2x.png"
+                />
+
+                <div class="rectangle-parent16">
+                  <div class="frame-child17"></div>
+                  <div class="item-for-sell-1045-wrapper17">
+                    <div class="item-for-sell-container19">
+                      <span>
+                        <p class="item-for-sell19">Item for Sell</p>
+                        <p class="p19">$10.45</p>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="description20">Description:</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="frames5">
+            <div class="image-26-parent3">
+              <img
+                class="image-26-icon20"
+                alt=""
+                src="./public/image-26@2x.png"
+              />
+
+              <div class="rectangle-parent17">
+                <div class="frame-child18"></div>
+                <div class="item-for-sell-1045-wrapper18">
+                  <div class="item-for-sell-container20">
+                    <span>
+                      <p class="item-for-sell20">Item for Sell</p>
+                      <p class="p20">$10.45</p>
+                    </span>
+                  </div>
+                </div>
+                <div class="description21">Description:</div>
+              </div>
+            </div>
+            <div class="image-26-parent4">
+              <img
+                class="image-26-icon21"
+                alt=""
+                src="./public/image-26@2x.png"
+              />
+
+              <div class="rectangle-parent18">
+                <div class="frame-child19"></div>
+                <div class="item-for-sell-1045-wrapper19">
+                  <div class="item-for-sell-container21">
+                    <span>
+                      <p class="item-for-sell21">Item for Sell</p>
+                      <p class="p21">$10.45</p>
+                    </span>
+                  </div>
+                </div>
+                <div class="description22">Description:</div>
+              </div>
+            </div>
+            <div class="image-26-parent5">
+              <img
+                class="image-26-icon22"
+                alt=""
+                src="./public/image-26@2x.png"
+              />
+
+              <div class="rectangle-parent19">
+                <div class="frame-child20"></div>
+                <div class="item-for-sell-1045-wrapper20">
+                  <div class="item-for-sell-container22">
+                    <span>
+                      <p class="item-for-sell22">Item for Sell</p>
+                      <p class="p22">$10.45</p>
+                    </span>
+                  </div>
+                </div>
+                <div class="description23">Description:</div>
+              </div>
+            </div>
+            <div class="image-26-parent6">
+              <img
+                class="image-26-icon23"
+                alt=""
+                src="./public/image-26@2x.png"
+              />
+
+              <div class="rectangle-parent20">
+                <div class="frame-child21"></div>
+                <div class="item-for-sell-1045-wrapper21">
+                  <div class="item-for-sell-container23">
+                    <span>
+                      <p class="item-for-sell23">Item for Sell</p>
+                      <p class="p23">$10.45</p>
+                    </span>
+                  </div>
+                </div>
+                <div class="description24">Description:</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <div class="footer3">
+        <footer class="footer-help-center-terms-of-se">
+          <div class="divider-top"></div>
+          <div class="footer-logo">
+            <div class="frame-help-center">
+              <div class="frame-parent-help">
+                <div class="help-center3">Help Center</div>
+                <div class="terms-of-service1">Terms of Service</div>
+                <div class="privacy-policy1">Privacy Policy</div>
+                <div class="about4">About</div>
+                <div class="log-out2">Log out</div>
+              </div>
+              <div class="logo-parent">
+                <div class="logo6">
+                  <div class="logo7">
+                    <img
+                      class="icon3"
+                      loading="eager"
+                      alt=""
+                      src="./public/icon2.svg"
+                    />
+
+                    <img class="nexcent-icon1" loading="eager" alt="" />
+                  </div>
+                </div>
+                <div class="prayaas-sankalp-parent">
+                  <h1 class="prayaas-sankalp8">Prayaas-Sankalp</h1>
+                  <div class="rendering-our-service4">
+                    Rendering our service for others
+                  </div>
+                </div>
+                <div class="copyright-copyright-nexus-wave">
+                  <div class="footer-container">
+                    <div class="copyright-20243">
+                      Copyright © 2024 NexusWave
+                    </div>
+                    <div class="all-rights-reserved3">All rights reserved</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <div class="divider-bottom"></div>
+      </div>
+    </div>
+     <!-- <script></script> -->
+     <!-- Include Firebase SDK -->
+     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+ 
+     <script>
+         const firebaseConfig = {
+             apiKey: "AIzaSyCDlvliI_5vDuKaO0rSl91ruryXijgujpA",
+             authDomain: "registeration-e2a50.firebaseapp.com",
+             databaseURL: "https://registeration-e2a50-default-rtdb.firebaseio.com",
+             projectId: "registeration-e2a50",
+             storageBucket: "registeration-e2a50.appspot.com",
+             messagingSenderId: "370155386398",
+             appId: "1:370155386398:web:5947563e78308b55f0e00f"
+         };
+ 
+         // Initialize Firebase
+         firebase.initializeApp(firebaseConfig);
+         const database = firebase.database();
+         const firestore = firebase.firestore();
+ 
+         // Function to display seller products on the profile page
+         function displaySellerProducts() {
+         // Get the reference to the seller's products in Firebase
+         const sellerProductsRef = database.ref('food'); // Replace 'food' with the correct category
+ 
+         // Retrieve data from Firebase
+         sellerProductsRef.once('value')
+             .then(snapshot => {
+                 const sellerProducts = snapshot.val();
+ 
+                 // Log the retrieved data to the console for debugging
+                 console.log('Retrieved seller products:', sellerProducts);
+ 
+                 // Check if there are products
+                 if (sellerProducts) {
+                     const sellerProductsContainer = document.getElementById('box-container');
+ 
+                     // Loop through each product and create a box
+                     for (const productId in sellerProducts) {
+                         const product = sellerProducts[productId];
+ 
+                         const productBox = document.createElement('div');
+                         productBox.classList.add('vector-shape');
+ 
+                         // Log the product data to the console for debugging
+                         console.log('Product data:', product);
+ 
+                         // Create the inner HTML for the product box
+                         productBox.innerHTML = `
+                             <img  class="image-26-icon1" src="${product.imageURL}" alt="">
+                            <div class="rectangle-group">
+                            <div class="frame-inner"></div>
+                            <div class="item-for-sell-1045-container">
+                              <div class="item-for-sell-container1">
+                                <span>
+                                  <p class="item-for-sell1">${product.title}</p>
+                                  <p class="p1">$${product.price}</p>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="description2">Description:${product.description}</div>
+                          </div>
+                         `;
+ 
+                         // Attach a click event to open the product detail overlay
+                         productBox.addEventListener('click', () => {
+                             open_product_detail(product.title, product.price, product.description, product.imageURL);
+                         });
+ 
+                         // Append the product box to the container
+                         sellerProductsContainer.appendChild(productBox);
+                     }
+                 }
+             })
+             .catch(error => {
+                 console.error('Error fetching seller products:', error);
+             });
+     }
+ 
+         // Call the function to display seller products when the page loads
+         displaySellerProducts();
+ 
+         // Rest of your existing scripts
+         // ...
+         function open_product_detail(name, price, description, imageURL) {
+             var overlay = document.getElementById("product-detail-overlay");
+             overlay.classList.add("visible");
+                 // Create an img element using innerHTML
+             var imageContainer = document.getElementById("image-container");
+             imageContainer.innerHTML = `<img src="${imageURL}" alt="">`;
+             document.getElementById("detail-product-name").innerText = name;
+             document.getElementById("detail-product-price").innerText = `$${price}`;
+             document.getElementById("detail-product-description").innerText = description;
+         }
+ 
+         function closeProductDetail() {
+             var productDetailOverlay = document.getElementById("product-detail-overlay");
+             productDetailOverlay.classList.remove("visible");
+         }
+ 
+         async function addToCart() {
+     var productName = document.getElementById("detail-product-name").innerText;
+     var productPrice = document.getElementById("detail-product-price").innerText.slice(1); // Remove "$" sign
+     var productDescription = document.getElementById("detail-product-description").innerText;
+     var productQuantity = document.getElementById("quantity").value;
+ 
+     // Validate the quantity (ensure it is a positive integer)
+     if (!(/^\d+$/.test(productQuantity)) || productQuantity < 1) {
+         alert("Please enter a valid quantity.");
+         return;
+     }
+ 
+     // Store data in Firebase Realtime Database using push to generate unique keys
+     const userId = firebase.auth().currentUser.uid;
+     const cartData = database.ref(`cartData/${userId}`);
+     const newProductRef = cartData.push();
+ 
+     newProductRef.set({
+         product_Name: productName,
+         product_Price: productPrice,
+         product_Description: productDescription,
+         product_Quantity: productQuantity
+     })
+     .then(() => {
+         // Display success message
+         alert("Added to the cart ");
+         document.getElementById('success-message').textContent = 'Product added to the cart successfully!';
+         console.log("Product added to cart ");
+         window.location.href="profile8.html"
+     })
+     .catch(error => {
+         console.error('Error:', error);
+         console.log("Product is not added to cart ");
+     });
+ }
+ 
+         function buyNow() {
+             var productName = document.getElementById("detail-product-name").innerText;
+             var productPrice = document.getElementById("detail-product-price").innerText.slice(1); // Remove "$" sign
+             var productDescription = document.getElementById("detail-product-description").innerText;
+             var productQuantity = document.getElementById("quantity").value;
+ 
+             // Validate the quantity (ensure it is a positive integer)
+             if (!(/^\d+$/.test(productQuantity)) || productQuantity < 1) {
+                 alert("Please enter a valid quantity.");
+                 return;
+             }
+ 
+             // Store data in Firebase Realtime Database using push to generate unique keys
+             const userId = firebase.auth().currentUser.uid;
+             const orderedListRef = database.ref(`orderedList/${userId}`);
+             const newOrderRef = orderedListRef.push();
+ 
+             newOrderRef.set({
+                 product_Name: productName,
+                 product_Price: productPrice,
+                 product_Description: productDescription,
+                 product_Quantity: productQuantity
+             })
+             .then(() => {
+                 // Display success message
+                 alert("Order placed successfully");
+                 document.getElementById('success-message').textContent = 'Order placed successfully!';
+                 console.log("Order placed successfully");
+                 // Close the product details overlay
+                 closeProductDetail();
+             })
+             .catch(error => {
+                 console.error('Error:', error);
+                 console.log("Error placing order");
+             });
+         }
+     </script>
+  </body>
+</html>

@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="market.css" />
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./user-profile-page-brown.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+  </head>
+  <body>
+                  <!-- product-details-overlay -->
+                  <div id="product-detail-overlay" class="product-detail-overlay">
+                    <div class="boxes">
+                        <center>
+                          <div class="close-icon">
+                            <i class="fas fa-times" onclick="closeProductDetail()">X</i>
+                        </div>
+                        </center>
+                        <center><h1>User cartData</h1></center>
+                        <div id="user-cart">
+                            <!-- Display user cart data here -->
+                            <h2>Cart Items:</h2>
+                            <ul id="cart-items"></ul>
+                        </div>
+                        <center><h1>Ordered list</h1></center>
+                        <div id="ordered-list">
+                            <!-- Display ordered list here -->
+                            <ul id="ordered-items"></ul>
+                        </div>
+                    </div>
+                </div>
+
+    <div class="user-profile-page-brown1">
+      <header class="nmaviheader2">
+        <div class="logotitle2">
+          <div class="logo3">
+            <img
+              class="image-104-icon2"
+              loading="eager"
+              alt=""
+              src="./Element/logo.png"
+            />
+          </div>
+          <div class="text2">
+            <h2 class="prayaas-sankalp5">Prayaas-Sankalp</h2>
+          </div>
+        </div>
+        <div class="navilinls1">
+          <a class="navlink5" id="Home">
+            <h3 class="home2" onclick="Home()" >Home</h3>
+          </a>
+          <a class="navlink6" id="donate" onclick="Donate()">
+            <h3 class="donate2">Donate</h3>
+          </a>
+          <a class="navlink7" id="volunteer">
+            <h3 class="volunteer2">Volunteer</h3>
+          </a>
+          <a class="navlink8" id="collab" href="collab-page.html">
+            <h3 class="collab2">Collab</h3>
+          </a>
+          <a class="navlink9">
+            <h3 class="cart-orders2" id="open-cart" >Cart & Orders</h3>
+          </a>
+        </div>
+        <div class="profile2">
+          <div class="frame-frame">
+            <img
+              class="image-7-icon3"
+              loading="eager"
+              alt=""
+              src="user.png"
+            />
+          </div>
+          <div class="nametitle2">
+            <div class="user-co-founder1">
+              <span class="user-co-founder-txt-container1">
+                <p class="user1" id="profile-username">User</p>
+                <p class="co-founder2"></p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="log-in3">
+        <img
+          class="bg-texture-1-icon1"
+          alt=""
+          src="./public/bg-texture-1@2x.png"
+        />
+
+        <div class="contribution-frame">
+          <div class="cleanliness-drive-frame">
+            <div class="mainprofiledsh1">
+              <div class="nav-links-frame">
+                <div class="profile-frame">
+                  <div class="b-gtexture-frame">
+                    <img
+                      class="image-105-icon"
+                      alt=""
+                      src="./public/image-105@2x.png"
+                    />
+
+                    <img
+                      class="image-7-icon4"
+                      loading="eager"
+                      alt=""
+                      src="user.png"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="volunteer-title">
+                <h1 class="user-abc" id="profile-username1" >User ABC</h1>
+              </div>
+              <div class="key-volunteer-frame">
+                <div class="software-developer1">
+                  <label for="" id="profile-profession1"> Software Developer</label>
+                  <label for="" id="profile-profession2"> Software Developer</label>
+                </div>
+              </div>
+              <div class="user-a-b-c">
+                <div class="user-frame">
+                  <img
+                    class="pin-icon"
+                    loading="eager"
+                    alt=""
+                    src="./public/pin@2x.png"
+                  />
+
+                  <div class="kothanur-bangalore2" id="profile-address" >Kothanur, Bangalore</div>
+                </div>
+              </div>
+              <div class="key-volunteer-frame1">
+                <p class="my-name-is" id="profile-bio">
+                  <!-- My name is  User ABC and I am a volunteer who likes to
+                  be helpful to the society. I am a friendly and approachable
+                  person who is always willing to lend a hand to those in need.
+                  I believe that giving back to the community is one of the most
+                  important things that we can do as human beings. In my free
+                  time. -->
+                </p>
+              </div>
+              <div class="interests-section1">
+                <div class="reviews-label">
+                  <div class="joined-on-191">Joined on 19 Apr 2023</div>
+                  <div class="cleanliness-drive-label1">
+                    <img
+                      class="image-13-icon1"
+                      loading="eager"
+                      alt=""
+                      src="./Element/Slinks.png"
+                    />
+
+                    <img
+                      class="image-12-icon1"
+                      loading="eager"
+                      alt=""
+                      src="./Element/twiiter.png"
+                    />
+
+                    <img
+                      class="image-11-icon1"
+                      loading="eager"
+                      alt=""
+                      src="./Element/linkedin.png"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header-frame">
+              <div class="interest1">
+                <div class="navi-links-frame">
+                  <h1 class="interests-skills1">Interests / Skills</h1>
+                </div>
+                <div class="mainprofile-dsh-frame">
+                  <div class="communicaton-frame">
+                    <button class="communciation">
+                      <div class="communciation-child"></div>
+                      <div class="pin-frame">
+                        <div class="communication1" id="profile-skill1">Communication</div>
+                      </div>
+                      <img
+                        class="image-14-icon"
+                        alt=""
+                        src="./public/image-14@2x.png"
+                      />
+                    </button>
+                    <button class="communciation1">
+                      <div class="communciation-item"></div>
+                      <div class="volunteering2" id="profile-skill2">Volunteering</div>
+                      <img
+                        class="image-14-icon1"
+                        alt=""
+                        src="./public/image-14-1@2x.png"
+                      />
+                    </button>
+                  </div>
+                  <button class="probles">
+                    <div class="probles-child"></div>
+                    <div class="problem-solving1" id="profile-skill3">Problem-solving</div>
+                    <img
+                      class="image-14-icon2"
+                      alt=""
+                      src="./public/image-14@2x.png"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div class="contact-info1">
+                <div class="contact-info-child"></div>
+                <h1 class="contact-info2">Contact Info</h1>
+                <div class="mobile-email-frame">
+                  <div class="social-media-frame">
+                    <button class="mobile">
+                      <div class="mobile-child"></div>
+                      <img
+                        class="image-15-icon4"
+                        alt=""
+                        src="./public/image-15@2x.png"
+                      />
+
+                      <div class="website-link-label"  id="profile-phoneNo">+91 94572904585</div>
+                    </button>
+                    <button class="email">
+                      <div class="email-child"></div>
+                      <img
+                        class="image-15-icon5"
+                        alt=""
+                        src="./public/image-15-11@2x.png"
+                      />
+
+                      <div class="wwwfigmacom2">www.figma.com</div>
+                    </button>
+                  </div>
+                  <div class="incrediblevolunteerlabel">
+                    <button class="insta" id="insta">
+                      <div class="insta-child"></div>
+                      <img
+                        class="image-15-icon6"
+                        alt=""
+                        src="./public/image-15-21@2x.png"
+                      />
+
+                      <div class="figma-2">_.Figma._</div>
+                    </button>
+                    <button class="twiiter" id="twitter">
+                      <div class="twiiter-child"></div>
+                      <img
+                        class="image-15-icon7"
+                        loading="eager"
+                        alt=""
+                        src="./public/image-15-31@2x.png"
+                      />
+
+                      <div class="figma-3">_.Figma._</div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="cleanlinessdrivelabel">
+          <div class="tastydonorlabel">
+            <div class="contributionframe">
+              <div class="contributionframe-child"></div>
+              <div class="contributiontext">
+                <h1 class="contribution1">Contribution</h1>
+                <div class="awarded-contribution">
+                  <div class="contribution-1-1">
+                    Contribution 1 :- You hae been awarded for the best
+                    participation.
+                  </div>
+                  <div class="contribution-2-1">
+                    Contribution 2 :- You have been incredible volunteer our
+                    website
+                  </div>
+                  <div class="contribution-3-1">
+                    Contribution 3 :- By people’s review you have earned the
+                    title “Most Trusted Donor”
+                  </div>
+                  <div class="contribution-4-1">
+                    Contribution 4 :- Thank you for the participating the food
+                    drive.
+                  </div>
+                </div>
+              </div>
+              <div class="cleanliness-drive2">
+                <div class="tasty-donor1">
+                  <div class="key-volunteer1">
+                    <div class="most-trusted-donator1">
+                      <div class="tasty-donor-frame">
+                        <img
+                          class="image-19-icon1"
+                          loading="eager"
+                          alt=""
+                          src="./public/image-191@2x.png"
+                        />
+
+                        <div class="cleanliness-drive3">Cleanliness drive</div>
+                      </div>
+                      <div class="key-volunteer-text">
+                        <img
+                          class="image-22-icon1"
+                          loading="eager"
+                          alt=""
+                          src="./public/image-221@2x.png"
+                        />
+
+                        <div class="tasty-donor2">Tasty Donor</div>
+                      </div>
+                    </div>
+                    <div class="links2">
+                      <div class="communication-title">
+                        <img
+                          class="image-17-icon1"
+                          loading="eager"
+                          alt=""
+                          src="./public/image-171@2x.png"
+                        />
+
+                        <div class="key-volunteer2">Key Volunteer</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="logotitle-frame-wrapper">
+                    <div class="logotitle-frame">
+                      <img
+                        class="image-18-icon1"
+                        loading="eager"
+                        alt=""
+                        src="./public/image-181@2x.png"
+                      />
+
+                      <div class="most-trusted-donator2">
+                        Most Trusted Donator
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer class="footer2">
+            <div class="links3">
+              <div class="link-11">
+                <h3 class="help-center2">Help Center</h3>
+              </div>
+              <div class="link-21">
+                <h3 class="log-out1">Log out</h3>
+              </div>
+              <div class="link-61">
+                <h3 class="about3">About</h3>
+              </div>
+            </div>
+            <div class="logotitle3">
+              <div class="logo4">
+                <img
+                  class="image-103-icon1"
+                  loading="eager"
+                  alt=""
+                  src="./public/image-103@2x.png"
+                />
+              </div>
+              <div class="titletag1">
+                <h1 class="prayaas-sankalp6">Prayaas-Sankalp</h1>
+                <h2 class="rendering-our-service3">
+                  Rendering our service for others
+                </h2>
+              </div>
+              <div class="copyright2">
+                <div class="copyright-20242">Copyright © 2024 NexusWave.</div>
+                <div class="all-rights-reserved2">All rights reserved</div>
+              </div>
+            </div>
+          </footer>
+        </section>
+      </main>
+    </div>
+          <!-- <script></script> -->
+        <!-- Include Firebase SDK -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+    
+        <!-- Your web app's Firebase configuration -->
+        <script>
+            const firebaseConfig = {
+                apiKey: "AIzaSyCDlvliI_5vDuKaO0rSl91ruryXijgujpA",
+                authDomain: "registeration-e2a50.firebaseapp.com",
+                databaseURL: "https://registeration-e2a50-default-rtdb.firebaseio.com",
+                projectId: "registeration-e2a50",
+                storageBucket: "registeration-e2a50.appspot.com",
+                messagingSenderId: "370155386398",
+                appId: "1:370155386398:web:5947563e78308b55f0e00f"
+            };
+    
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            const database = firebase.database();
+            const auth = firebase.auth();
+    
+            // Sign out function
+            function signOut() {
+                firebase.auth().signOut().then(() => {
+                    alert("User signed out successfully!");
+                    window.location.href="test2.html"
+                    // You can redirect the user or perform additional actions here
+                }).catch((error) => {
+                    console.error('Error signing out:', error);
+                });
+            }
+    
+            // Check for user authentication state
+            firebase.auth().onAuthStateChanged(user => {
+                if (user) {
+                    // User is signed in
+                    const userId = user.uid;
+    
+                    // Fetch user data from Realtime Database
+                    const userRef = database.ref(`users/${userId}`);
+                    userRef.once('value', snapshot => {
+                        const userData = snapshot.val();
+                        if (userData) {
+                            console.log(userData);
+                            // Display user data on the front end
+                            // document.getElementById('profile-email').textContent = user.email || 'N/A';
+                            document.getElementById('profile-username').textContent = userData.username || 'N/A';
+                            document.getElementById('profile-username1').textContent = userData.username || 'N/A';
+                            document.getElementById('profile-profession1').textContent = userData.profession || 'N/A';
+                            document.getElementById('profile-profession2').textContent = userData.profession2 || 'N/A';
+                            document.getElementById('profile-skill1').textContent = userData.interestSkill1 || 'N/A';
+                            document.getElementById('profile-skill2').textContent = userData.interestSkill2 || 'N/A';
+                            document.getElementById('profile-skill3').textContent = userData.interestSkill3 || 'N/A';
+                            document.getElementById('profile-phoneNo').textContent = userData.mobileNo || 'N/A';
+                            document.getElementById('profile-address').textContent = userData.address || 'N/A';
+                            document.getElementById('profile-bio').textContent = userData.bio || 'N/A';
+                            document.getElementById('profile-socialMedia').textContent = userData.socialMedia ? userData.socialMedia.join(', ') : 'N/A';
+                        }
+                    });
+    
+                    // Fetch user cart data from Realtime Database
+                    const cartRef = database.ref(`cartData/${userId}`);
+                    cartRef.on('value', snapshot => {
+                        const cartData = snapshot.val();
+                        const cartItems = document.getElementById('cart-items');
+                        cartItems.innerHTML = ''; // Clear previous content
+    
+                        if (cartData) {
+                            // Display cart data on the front end
+                            for (const productId in cartData) {
+                                const product = cartData[productId];
+                                // Display the product information
+                                const listItem = document.createElement('li');
+                                listItem.innerHTML = `
+                                    <strong>Product Name:</strong> ${product.product_Name || 'N/A'}<br>
+                                    <strong>Product Price:</strong> ${product.product_Price || 'N/A'}<br>
+                                    <strong>Product Description:</strong> ${product.product_Description || 'N/A'}<br>
+                                    <strong>Product Quantity:</strong> ${product.product_Quantity || 'N/A'}<br>
+                                    <button onclick="buyNow('${productId}')">Buy Now</button>
+                                    <hr>
+                                `;
+                                cartItems.appendChild(listItem);
+                            }
+                        }
+                    });
+    
+                    // Fetch ordered list data from Realtime Database
+                    const orderedListRef = database.ref(`orderedList/${userId}`);
+                    orderedListRef.on('value', snapshot => {
+                        const orderedListData = snapshot.val();
+                        const orderedItems = document.getElementById('ordered-items');
+                        orderedItems.innerHTML = ''; // Clear previous content
+    
+                        if (orderedListData) {
+                            // Display ordered list on the front end
+                            for (const orderId in orderedListData) {
+                                const order = orderedListData[orderId];
+                                // Display the order information
+                                const listItem = document.createElement('li');
+                                listItem.innerHTML = `
+                                    <strong>Product Name:</strong> ${order.product_Name || 'N/A'}<br>
+                                    <strong>Product Price:</strong> ${order.product_Price || 'N/A'}<br>
+                                    <strong>Product Description:</strong> ${order.product_Description || 'N/A'}<br>
+                                    <strong>Product Quantity:</strong> ${order.product_Quantity || 'N/A'}<br>
+                                    <hr>
+                                `;
+                                orderedItems.appendChild(listItem);
+                            }
+                        }
+                    });
+    
+                } else {
+                    // User is not signed in
+                    document.getElementById('error-message').textContent = 'User not signed in';
+                }
+            });
+    
+            function buyNow(productId) {
+                const userId = firebase.auth().currentUser.uid;
+                const cartRef = database.ref(`cartData/${userId}/${productId}`);
+                const orderedListRef = database.ref(`orderedList/${userId}`);
+                cartRef.once('value', snapshot => {
+                    const product = snapshot.val();
+                    if (product) {
+                        // Move the product to the ordered list
+                        orderedListRef.push(product)
+                            .then(() => {
+                                // Remove the product from the cart
+                                cartRef.remove()
+                                    .then(() => {
+                                        // Update the cart display
+                                        // fetch user cart data again
+                                        const cartItems = document.getElementById('cart-items');
+                                        cartItems.innerHTML = '';
+                                        cartRef.once('value', snapshot => {
+                                            const cartData = snapshot.val();
+                                            if (cartData) {
+                                                // Display cart data on the front end
+                                                for (const productId in cartData) {
+                                                    const product = cartData[productId];
+                                                    // Display the product information
+                                                    const listItem = document.createElement('li');
+                                                    listItem.innerHTML = `
+                                                        <strong>Product Name:</strong> ${product.product_Name || 'N/A'}<br>
+                                                        <strong>Product Price:</strong> ${product.product_Price || 'N/A'}<br>
+                                                        <strong>Product Description:</strong> ${product.product_Description || 'N/A'}<br>
+                                                        <strong>Product Quantity:</strong> ${product.product_Quantity || 'N/A'}<br>
+                                                        <button onclick="buyNow('${productId}')">Buy Now</button>
+                                                        <hr>
+                                                    `;
+                                                    cartItems.appendChild(listItem);
+                                                }
+                                            }
+                                        });
+                                        alert("Product bought successfully!");
+                                    })
+                                    .catch(error => {
+                                        console.error('Error removing product from cart:', error);
+                                    });
+                            })
+                            .catch(error => {
+                                console.error('Error moving product to ordered list:', error);
+                            });
+                    }
+                });
+            }
+
+            // open cart and details
+            const openCart =document.getElementById("open-cart");
+            openCart.addEventListener('click', () => {
+                             open_product_detail();
+                         });
+
+            function open_product_detail() {
+             var overlay = document.getElementById("product-detail-overlay");
+             overlay.classList.add("visible");             
+            }
+
+            function closeProductDetail() {
+             var productDetailOverlay = document.getElementById("product-detail-overlay");
+             productDetailOverlay.classList.remove("visible");
+         }
+
+         
+
+         function Home(){
+          const profileusername = document.getElementById("profile-username").textContent;
+         console.log(profileusername);
+          window.location.href="Home-page.html?username=" + profileusername;
+         }
+
+         
+
+         function Donate(){
+          window.location.href="donate.html";
+          
+         }
+
+
+
+        </script>
+  </body>
+</html>

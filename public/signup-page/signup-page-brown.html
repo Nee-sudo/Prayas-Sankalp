@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+
+    
+    <!-- Our script must be loaded after firebase references -->
+
+    <link rel="stylesheet" href="./signup-global.css"/>
+    <link rel="stylesheet" href="./signup-page-brown.css"/>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="signup-page-brown">
+      <section class="log-in8">
+        <img class="image-6-icon3" alt="" />
+
+        <div class="frame-log-in">
+          <div class="frame-render-service">
+            <div class="frame-label-textfield">
+              <div class="frame-textfield">
+                <div class="frame-prayaas-sankalp">
+                  <h1 class="prayaas-sankalp4">Prayaas-Sankalp</h1>
+                  <div class="rendering-our-service4">
+                    Rendering our service for the others
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img class="image-5-icon3" loading="eager" alt="" />
+        </div>
+        <div class="sign-up-page-frame">
+          <form class="textfield-frame1">
+            <div class="log-in9">
+              <h3 class="sign-up4">Sign Up</h3>
+              <div class="text-field12">
+                <div class="text-frame">
+                  <div class="label7">Your email</div>
+                  <div class="password-hide-see6">
+                    <img class="icon7" alt="" />
+
+                    <div class="hid6">Hide</div>
+                  </div>
+                </div>
+                <input class="text-field13" id="email" type="text" placeholder="Enter your email">
+
+                <div class="error-message6">Error message</div>
+              </div>
+              <div class="text-field14">
+                <div class="label7">Mobile No</div>
+                <input class="text-field13" id="number" type="number" placeholder="Enter your number">
+                <div class="error-message7">Error message</div>
+              </div>
+              <div class="text-field16">
+                <div class="label-parent2">
+                  <div class="label8">Password</div>
+                  <div class="password-hide-see7">
+                    <img class="icon8" alt="" />
+                    <div class="hide7"></div>
+                  </div>
+                </div>
+                <input class="text-field17" id="password" type="password" placeholder="Enter your password" />
+
+                <div class="error-message8">Error message</div>
+              </div>
+              <div class="text-field18">
+                <div class="label-parent3">
+                  <div class="label9">Confirm Password</div>
+                  <div class="password-hide-see8">
+                    <!-- <img class="icon9" loading="eager" alt="" /> -->
+                    
+                    
+                    <button class="hide8" id="passwordToggle" type="button">Show</button>
+                  </div>
+                </div>
+                <input class="text-field19" type="password" id="confirmPassword" placeholder="Confirm password"/>
+
+                <div class="error-message9">Error message</div>
+              </div>
+            </div>
+            <button class="button4">
+              <div class="icons-container">
+                <img class="icons9" alt="" />
+
+                <div class="sign-up5" id="registerButton">Create an account</div>
+              </div>
+            </button>
+          </form>
+        </div>
+      </section>
+      <footer class="footer3">
+        <div class="divider-top3"></div>
+        <div class="frame-footer">
+          <div class="divider-top-bottom">
+            <div class="frame-contact-us">
+              <div class="frame-about">
+                <button class="about6">Sign up</button>
+                <button class="accessibility3">Log in</button>
+                <button class="help-center3">Help Center</button>
+                <button class="terms-of-service3">Terms of Service</button>
+                <button class="privacy-policy3">Privacy Policy</button>
+                <button class="about7">About</button>
+                <button class="settings3">Settings</button>
+              </div>
+            </div>
+            <div class="terms-privacy-settings">
+              <div class="help-center-link">
+                <div class="logo1">
+                  <img class="icon10" loading="eager" alt="" />
+
+                  <img class="nexcent-icon1" loading="eager" alt="" />
+                </div>
+              </div>
+              <div class="prayaas-sankalp-label">
+                <h1 class="prayaas-sankalp5">Prayaas-Sankalp</h1>
+                <div class="rendering-our-service5">
+                  Rendering our service for the others
+                </div>
+              </div>
+            </div>
+            <div class="copyright-info">
+              <div class="copyright1">
+                <div class="copyright-20241">Copyright © 2024 NexusWave.</div>
+                <div class="all-rights-reserved1">All rights reserved</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="divider-bottom4"></div>
+      </footer>
+    </div>
+  <!-- script.js -->
+  <script>
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+          apiKey: "AIzaSyCDlvliI_5vDuKaO0rSl91ruryXijgujpA",
+          authDomain: "registeration-e2a50.firebaseapp.com",
+          databaseURL: "https://registeration-e2a50-default-rtdb.firebaseio.com",
+          projectId: "registeration-e2a50",
+          storageBucket: "registeration-e2a50.appspot.com",
+          messagingSenderId: "370155386398",
+          appId: "1:370155386398:web:5947563e78308b55f0e00f"
+      };
+  
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const database = firebase.database();
+      const auth = firebase.auth();;
+
+      // Register button click event listener
+      document.getElementById("registerButton").addEventListener("click", function (e) {
+        e.preventDefault(); 
+      // const username = document.getElementById("full_name").value;
+      const email = document.getElementById("email").value;
+      const number = document.getElementById("number").value;
+      const password = document.getElementById("password").value;
+
+      firebase.auth().createUserWithEmailAndPassword(email, password)
+          .then((userCredential) => {
+              const user = userCredential.user;
+              return firebase.database().ref('users/' + user.uid).set({
+                  // username: username,
+                  email: email,
+                  phone_number: number
+              });
+          })
+          .then(() => {
+              alert("User created successfully!");
+              // Get the user's JWT token
+              return firebase.auth().currentUser.getIdToken();
+          })
+          .then((token) => {
+              // Store the token (e.g., in a cookie or local storage)
+              console.log('Token:', token);
+
+              // Redirect to the profile page or perform other actions
+              window.location.href = 'profile.html';
+          })
+          .catch((error) => {
+              const errorMessage = error.message;
+              alert(errorMessage);
+          });
+  });
+
+  // Function for hide and show 
+        const passwordInput = document.getElementById('password');
+        const confirmPassword = document.getElementById('confirmPassword');
+        const passwordToggle = document.getElementById('passwordToggle');
+
+        passwordToggle.addEventListener('click', function() {
+            if (passwordInput.type === 'password' && confirmPassword.type === 'password') {
+                passwordInput.type = 'text';
+                confirmPassword.type ='text';
+                passwordToggle.textContent = 'Hide';
+            } else {
+                passwordInput.type = 'password';
+                confirmPassword.type ='password';
+                passwordToggle.textContent = 'Show';
+                asswordToggle.textContent = 'Hide';
+            }
+        });
+  </script>
+  </body>
+</html>

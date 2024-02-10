@@ -1,0 +1,115 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="index.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+ <!-- banner Section -->
+ <header class="banner">
+    <form class="search_container">
+      <input class="input_btn" type="search" placeholder="Search" aria-label="Search">
+      <button class="search_btn" type="submit">Search</button>
+    </form>
+    <div class="banner-text">
+      <h1>
+        Second-Hand Market
+      </h1>
+      <div class="intro">For all and Food</div>
+      <p >Your Patform for Second-Hand Bliss and Food for Good </p>
+      <!-- <button class="register_btn">shop now</button> -->
+    </div>
+  </header>
+  <!-- product-banner -->
+  <header class="product-banner">
+    <div class="banner-text">
+      <h1>
+        Sale 50% off
+      </h1>
+      <button class="register_btn">shop now</button>
+    </div>
+  </header>
+
+<!-- product container -->
+<div id="box-container" class="box-container">
+    <div class="boxes" onclick="open_product_detail()">
+      <img src="product.jpg" alt="">
+        <label class="product-name" for="product-name">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, in. Id voluptates libero reprehenderit. Quis, molestias ipsa autem nemo distinctio, eveniet quisquam voluptatem veritatis repellat fugiat maiores sunt unde debitis.</label>
+        <label class="product-price" for="product-name">******</label>
+  <div class="product-description"></div>
+    </div>
+    <div class="boxes" onclick="open_product_detail()">
+      <img src="product.jpg" alt="">
+        <label class="product-name" for="product-name">Lorem ipsum dolor sit amet consectetur, adipisicing elit. At ad nobis unde vero quibusdam dolore id veritatis iusto enim iste perspiciatis similique amet deserunt, assumenda, nemo alias magni adipisci tenetur.</label>
+        <label class="product-price" for="product-name">****</label>
+  <div class="product-description"></div>
+    </div>
+</div>
+
+<!-- product-details-overlay -->
+<div id="product-detail-overlay" class="product-detail-overlay">
+    <div class="boxes" >
+      <div class="close-icon">
+        <i class="fas fa-times" onclick="closeProductDetail()"></i>
+      </div>
+      <img src="product.jpg" alt="">
+        <label class="product-name" for="product-name">Name</label>
+        <label class="product-price" for="product-name">$100</label>
+  <div class="product-description">
+    this is the description of the produt 
+  </div>
+  
+  <select class="quantity" id="quantity" name="quantity" >
+    <!-- You can adjust the number of options based on your requirement -->
+    <option value="quantity">quantity</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select>
+  <button>Buy now</button>
+  <button>Add to cart</button>
+    </div>
+  </div>
+
+  <!-- footer is there only -->
+<footer class="column-footer">
+  <div class="footer-column">
+    <h3>Contact</h3>
+    <p>Email: info@example.com</p>
+    <p>Phone: +1 123 456 7890</p>
+  </div>
+
+  <div class="footer-column">
+    <h3>Quick Links</h3>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-column">
+    <h3>Follow Us</h3>
+    <div class="social-icons">
+      <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</footer>
+
+
+
+
+  <script>
+      function open_product_detail(){
+    var overlay = document.getElementById("product-detail-overlay");
+    overlay.classList.toggle("visible");
+}
+// close-open_product_detail
+function closeProductDetail() {
+    var productDetailOverlay = document.getElementById("product-detail-overlay");
+    productDetailOverlay.classList.toggle("visible");
+  }
+  </script>

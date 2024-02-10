@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayass-sankalp</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+<h1>Sell Your excess food at Prayass_sankalp</h1>
+
+<form id="Seller-form">
+  <form id="Seller-form">
+    <div class="form-group">
+        <label for="Name">Name:</label>
+        <div class="Name-select">
+            <input type="text" id="Name" placeholder="Enter Your Name">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="PhoneNo">PhoneNo:</label>
+        <div class="PhoneNo-select">
+            <input type="number" id="PhoneNo" placeholder="Enter Your PhoneNo">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="location">Location:</label>
+        <div class="location-select">
+            <input type="text" id="location" placeholder="Enter city or pincode">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="category">Category:</label>
+        <select id="category">
+            <option value="">Select a category</option>
+            <option value="South Indian">South Indian</option>
+            <option value="North Indian">North Indian</option>
+            <option value="Chinese">Chinese</option>
+            <option value="Fast Food">Fast Food</option>
+            <option value="Beverages">Beverages</option>
+            <option value="Desserts/Sweets">Desserts/Sweets</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="title">Title:</label>
+        <input type="text" id="title" placeholder="Enter product title">
+    </div>
+    <div class="form-group">
+        <label for="price">Price:</label>
+        <input type="number" id="price" placeholder="Enter price in Rupees"><br>
+        <label for="price">If you want to give away the food, enter price as "0"</label><br>
+    </div>
+    <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea id="description" placeholder="Enter product description"></textarea><br>
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" placeholder="Enter quantity">
+    </div>
+    <div class="form-group">
+        <label for="netWeight">Net Weight:</label>
+        <input type="text" id="netWeight" placeholder="(i.e, 10kg and 450 grams)">
+    </div>
+
+    <div class="form-group">
+        <label for="foodImage">Food Image:</label>
+        <input type="file" id="foodImage" accept="image/*">
+    </div>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
