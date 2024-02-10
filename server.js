@@ -131,7 +131,7 @@ app.use(express.static('Prayas-Sankalp/signup-page'));
 app.use(express.static('Prayas-Sankalp/login-page'));
 app.use(express.static('Prayas-Sankalp/register-page'));
 app.use(express.static('Prayas-Sankalp/Home page'));
-app.use(express.static('Prayas-Sankalp/user_Profile'));
+app.use(express.static('Prayas-Sankalp/User_Profile'));
 app.use(express.static('Prayas-Sankalp/Donate'));
 app.use(express.static('Prayas-Sankalp/Collab Page'));
 // app.use(express.static('public'));
