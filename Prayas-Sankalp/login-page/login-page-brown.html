@@ -80,7 +80,8 @@
             <div class="about-accessibility-help-cente">
               <img class="icons7" alt="" src="./public/icons3.svg" />
 
-              <div class="sign-up3">Create an account</div>
+              <div class="sign-up3" style="cursor: pointer;"
+  onclick="gotosignup()">Create an account</div>
             </div>
           </button>
         </div>
@@ -187,6 +188,9 @@
                 passwordToggle.textContent = 'Show';
             }
         });
+      function gotosignup(){
+        window.location.href="signup-page-brown.html"
+      }
 
     </script>
   </body>
