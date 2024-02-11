@@ -84,7 +84,7 @@
                     <div class="collab"style="cursor: pointer;" onclick="collab()" >Collab</div>
                   </div>
                   <div class="navlink4">
-                    <div class="cart-orders"style="cursor: pointer;">Cart & Orders</div>
+<!--                     <div class="cart-orders"style="cursor: pointer;">Cart & Orders</div> -->
                   </div>
                 </div>
                 <div class="profile">
@@ -401,7 +401,7 @@
                 <div class="terms-of-service1">Terms of Service</div>
                 <div class="privacy-policy">Privacy Policy</div>
                 <div class="about">About</div>
-                <div class="log-out" onclick="signOut()">Log out</div>
+                <div class="log-out" style="cursor: pointer;" onclick="signOut()">Log out</div>
               </div>
               <div class="about-link1">
                 <div class="copyright-text">
@@ -588,7 +588,7 @@
         function signOut() {
             firebase.auth().signOut().then(() => {
                 alert("User signed out successfully!");
-                window.location.href="test2.html"
+                window.location.href="login-page-brown.html"
                 // You can redirect the user or perform additional actions here
             }).catch((error) => {
                 console.error('Error signing out:', error);
