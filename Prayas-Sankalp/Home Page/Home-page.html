@@ -112,7 +112,7 @@
                   </div>
                   <div class="label3">
                     <button class="button1">
-                      <div class="label4">Register</div>
+                      <div class="label4" onclick = "opensignup()">Register</div>
                     </button>
                   </div>
                 </div>
@@ -146,7 +146,7 @@
                 <div class="buttons-wrapper">
                   <button class="buttons1">
                     <div class="buttons-item"></div>
-                    <b class="go-to-market">Go to Market</b>
+                    <b class="go-to-market" onclick="openmarket()">Go to Market</b>
                     <img class="vector-icon" alt="" src="./public/vector.svg" />
                   </button>
                 </div>
@@ -497,6 +497,12 @@
          function userprofile(){
           window.location.href="user-profile-page-brown.html?username=" + username;
          }
+      function opensignup(){
+        window.location.href="signup-page-brown.html"
+      }
+      function openmarket(){
+        window.location.href="buy-item-page1.html?username=" + username;
+      }
     </script>
   </body>
 </html>
