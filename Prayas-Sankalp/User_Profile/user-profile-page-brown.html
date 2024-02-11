@@ -54,20 +54,20 @@
           </div>
         </div>
         <div class="navilinls1">
-          <a class="navlink5" id="Home">
+          <a class="navlink5" id="Home" style="cursor: pointer;">
             <h3 class="home2" onclick="Home()" >Home</h3>
           </a>
-          <a class="navlink6" id="donate" onclick="Donate()">
+          <a class="navlink6" id="donate" style="cursor: pointer;" onclick="Donate()">
             <h3 class="donate2">Donate</h3>
           </a>
           <a class="navlink7" id="volunteer">
             <h3 class="volunteer2">Volunteer</h3>
           </a>
-          <a class="navlink8" id="collab" href="collab-page.html">
+          <a class="navlink8" style="cursor: pointer;" id="collab" href="collab-page.html">
             <h3 class="collab2">Collab</h3>
           </a>
           <a class="navlink9">
-            <h3 class="cart-orders2" id="open-cart" >Cart & Orders</h3>
+            <h3 class="cart-orders2" id="open-cart" style="cursor: pointer;" >Cart & Orders</h3>
           </a>
         </div>
         <div class="profile2">
@@ -356,7 +356,7 @@
                 <h3 class="help-center2">Help Center</h3>
               </div>
               <div class="link-21">
-                <h3 class="log-out1" onclick="signOut()">Log out</h3>
+                <h3 class="log-out1" style="cursor: pointer;" onclick="signOut()">Log out</h3>
               </div>
               <div class="link-61">
                 <h3 class="about3">About</h3>
@@ -584,7 +584,7 @@
         function signOut() {
             firebase.auth().signOut().then(() => {
                 alert("User signed out successfully!");
-                window.location.href="test2.html"
+                window.location.href="signup-page-brwon.html"
                 // You can redirect the user or perform additional actions here
             }).catch((error) => {
                 console.error('Error signing out:', error);
