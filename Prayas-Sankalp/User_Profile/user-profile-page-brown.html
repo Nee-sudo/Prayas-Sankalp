@@ -356,7 +356,7 @@
                 <h3 class="help-center2">Help Center</h3>
               </div>
               <div class="link-21">
-                <h3 class="log-out1">Log out</h3>
+                <h3 class="log-out1" onclick="signOut()">Log out</h3>
               </div>
               <div class="link-61">
                 <h3 class="about3">About</h3>
@@ -571,21 +571,25 @@
              var productDetailOverlay = document.getElementById("product-detail-overlay");
              productDetailOverlay.classList.remove("visible");
          }
-
-         
-
          function Home(){
           const profileusername = document.getElementById("profile-username").textContent;
          console.log(profileusername);
           window.location.href="Home-page.html?username=" + profileusername;
          }
-
-         
-
          function Donate(){
           window.location.href="donate.html";
-          
          }
+
+                  // Sign out function
+        function signOut() {
+            firebase.auth().signOut().then(() => {
+                alert("User signed out successfully!");
+                window.location.href="test2.html"
+                // You can redirect the user or perform additional actions here
+            }).catch((error) => {
+                console.error('Error signing out:', error);
+            });
+        }
 
 
 
