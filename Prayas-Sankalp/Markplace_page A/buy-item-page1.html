@@ -540,7 +540,7 @@
                 <div class="terms-of-service1">Terms of Service</div>
                 <div class="privacy-policy1">Privacy Policy</div>
                 <div class="about4">About</div>
-                <div class="log-out2">Log out</div>
+                <div class="log-out2" onclick="signOut()" >Log out</div>
               </div>
               <div class="logo-parent">
                 <div class="logo6">
@@ -767,6 +767,16 @@
          function collab(){
           window.location.href="collab-page.html";
          }
+               // Sign out function
+        function signOut() {
+            firebase.auth().signOut().then(() => {
+                alert("User signed out successfully!");
+                window.location.href="test2.html"
+                // You can redirect the user or perform additional actions here
+            }).catch((error) => {
+                console.error('Error signing out:', error);
+            });
+        }
      </script>
   </body>
 </html>
