@@ -440,7 +440,7 @@
                       <a class="terms-of-service4">Terms of Service</a>
                       <a class="privacy-policy3">Privacy Policy</a>
                       <a class="about6">About</a>
-                      <a class="log-out4">Log out</a>
+                      <a class="log-out4" onclick="signOut()" >Log out</a>
                     </div>
                     <div class="logo-frame">
                       <div class="logo-container">
@@ -503,6 +503,16 @@
       function openmarket(){
         window.location.href="buy-item-page1.html?username=" + username;
       }
+              // Sign out function
+        function signOut() {
+            firebase.auth().signOut().then(() => {
+                alert("User signed out successfully!");
+                window.location.href="test2.html"
+                // You can redirect the user or perform additional actions here
+            }).catch((error) => {
+                console.error('Error signing out:', error);
+            });
+        }
     </script>
   </body>
 </html>
