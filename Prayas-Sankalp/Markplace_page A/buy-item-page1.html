@@ -73,19 +73,19 @@
                 </div>
                 <div class="navilinls2">
                   <div class="navlink10">
-                    <div class="home3" onclick="Home()">Home</div>
+                    <div class="home3" onclick="Home()" style="cursor: pointer;">Home</div>
                   </div>
                   <button class="item-frames-group">
                     <div class="marketplace">Marketplace</div>
                   </button>
                   <div class="navlink11">
-                    <div class="donate3" onclick="Donate()">Donate</div>
+                    <div class="donate3" onclick="Donate()" style="cursor: pointer;">Donate</div>
                   </div>
                   <div class="navlink12">
                     <div class="volunteer4">Volunteer</div>
                   </div>
                   <div class="navlink13">
-                    <div class="collab3" onclick="collab()" >Collab</div>
+                    <div class="collab3" onclick="collab()" style="cursor: pointer;" >Collab</div>
                   </div>
                  
                   <div class="navlink14">
@@ -102,7 +102,7 @@
                     />
                   </div>
                   <div class="nametitle3">
-                    <div class="user-co-founder2" onclick="userprofile()">
+                    <div class="user-co-founder2" onclick="userprofile()" style="cursor: pointer;">
                       <span class="user-co-founder-txt-container2">
                         <p class="user2" id="profile-username">User</p>
                         <p class="co-founder3"></p>
@@ -540,7 +540,7 @@
                 <div class="terms-of-service1">Terms of Service</div>
                 <div class="privacy-policy1">Privacy Policy</div>
                 <div class="about4">About</div>
-                <div class="log-out2" onclick="signOut()" >Log out</div>
+                <div class="log-out2" onclick="signOut()" style="cursor: pointer;" >Log out</div>
               </div>
               <div class="logo-parent">
                 <div class="logo6">
@@ -771,7 +771,7 @@
         function signOut() {
             firebase.auth().signOut().then(() => {
                 alert("User signed out successfully!");
-                window.location.href="test2.html"
+                window.location.href="signup-page-brown.html"
                 // You can redirect the user or perform additional actions here
             }).catch((error) => {
                 console.error('Error signing out:', error);
