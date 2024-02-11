@@ -59,10 +59,10 @@
                   <div class="home5">Home</div>
                 </a>
                 <a class="f-r-a-m-efood-items">
-                  <div class="marketplace2" onclick="Marketplace()">Marketplace</div>
+                  <div class="marketplace2" style="cursor: pointer;" onclick="Marketplace()">Marketplace</div>
                 </a>
                 <a class="navlink21">
-                  <div class="donate8" onclick="Donate()">Donate</div>
+                  <div class="donate8" style="cursor: pointer;" onclick="Donate()">Donate</div>
                 </a>
                 <a class="navlink22">
                   <div class="volunteer6">Volunteer</div>
@@ -84,7 +84,7 @@
                   />
                 </div>
                 <div class="nametitle5">
-                  <div class="user-co-founder4"onclick="userprofile()" >
+                  <div class="user-co-founder4" onclick="userprofile()" style="cursor: pointer;">
                     <span class="user-co-founder-txt-container4">
                       <p class="user4" id="profile-username">User</p>
                       <p class="co-founder5"></p>
@@ -507,7 +507,7 @@
         function signOut() {
             firebase.auth().signOut().then(() => {
                 alert("User signed out successfully!");
-                window.location.href="test2.html"
+                window.location.href="signup-page-brown.html"
                 // You can redirect the user or perform additional actions here
             }).catch((error) => {
                 console.error('Error signing out:', error);
