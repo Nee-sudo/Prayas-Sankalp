@@ -9,8 +9,9 @@ const crypto = require('crypto');
 
 const app = express();
 const port = 4000;
+//Checking changes
 
-// Generate a random secret key
+// Generate a random secret key 
 const secretKey = crypto.randomBytes(32).toString('hex');
 console.log(secretKey);
 
