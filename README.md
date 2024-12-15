@@ -1,6 +1,6 @@
-# 🤝 Prayash Sankal  
+# 🤝 Prayas Sankal  
 
-**Prayash Sankal** is a platform dedicated to bringing people together to help those in need. By enabling donations of food, stationery, clothes, and other essential items, it serves as a bridge between those who want to give and those who need support, fostering a community of care and compassion.  
+**Prayas Sankal** is a platform dedicated to bringing people together to help those in need. By enabling donations of food, stationery, clothes, and other essential items, it serves as a bridge between those who want to give and those who need support, fostering a community of care and compassion.  
 
 ## 🌟 Features  
 - **Donation Platform:** Easily donate food, clothes, stationery, and other items to help the underprivileged.  
